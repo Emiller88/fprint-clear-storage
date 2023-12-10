@@ -14,13 +14,13 @@ if geteuid() != 0:
         "You need to have root privileges to run this script.\nPlease try again, this time using 'sudo'. Exiting."
     )
 
-# Load FPrint gi module
+print("Load FPrint gi module")
 require_version("FPrint", "2.0")
 
-# Import FPrint
+print("Import FPrint")
 from gi.repository import FPrint
 
-# Get FPrint Context
+print("Get FPrint Context")
 fprint_context = FPrint.Context()
 
 # Loop over FPrint devices
