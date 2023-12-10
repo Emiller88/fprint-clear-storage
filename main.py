@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#!/usr/bin/env cached-nix-shell
+#! nix-shell -i python3 -p python3Packages.pygobject3 libfprint
 
 # Import PyGObject
 # PyGObject is a Python package which provides bindings for GObject based libraries such as GTK, GStreamer, WebKitGTK, GLib, GIO and many more.
