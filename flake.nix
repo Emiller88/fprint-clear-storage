@@ -39,7 +39,7 @@
             ];
 
             propagatedBuildInputs = with python3.pkgs; [
-              pygobject
+              pygobject3
             ];
 
             pythonImportsCheck = ["fprint_clear_storage"];
