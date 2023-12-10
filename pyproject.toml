@@ -1,0 +1,11 @@
+[project]
+name = "fprint_clear_storage"
+description = ""
+version = "0.0.1"
+dependencies = [
+    "PyGObject",
+]
+
+
+[build-system]
+build-backend = "flit_core.buildapi"
