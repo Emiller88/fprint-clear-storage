@@ -37,8 +37,6 @@
               pygobject3
             ];
 
-            pythonImportsCheck = ["fprint_clear_storage"];
-
             meta = with lib; {
               description = "Python script to fix Framework fingerprint on a NixOS install";
               homepage = "https://github.com/Emiller88/fprint-clear-storage";
