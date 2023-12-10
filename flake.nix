@@ -26,12 +26,7 @@
             version = "unstable-2023-12-10";
             pyproject = true;
 
-            src = fetchFromGitHub {
-              owner = "Emiller88";
-              repo = "fprint-clear-storage";
-              rev = "9d8c6298763db2be598449cd28df67c3bfb51158";
-              hash = "sha256-W3r8d2mgUQChcvupn0RUPJczRC/nFlvQRwUulr1E+94=";
-            };
+            src = ./.;
 
             nativeBuildInputs = [
               python3.pkgs.setuptools
