@@ -1,5 +1,5 @@
 {
-  description = "";
+  description = "Python script to fix Framework fingerprint on a NixOS install";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/release-23.11";
