@@ -31,11 +31,19 @@
             nativeBuildInputs = [
               python3.pkgs.setuptools
               python3.pkgs.wheel
+              wrapGAppsHook
             ];
 
             propagatedBuildInputs = with python3.pkgs; [
               pygobject3
             ];
+
+            dontWrapGApps = true;
+
+            # Arguments to be passed to `makeWrapper`, only used by buildPython*
+            preFixup = ''
+              makeWrapperArgs+=("''${gappsWrapperArgs[@]}")
+            '';
 
             meta = with lib; {
               description = "Python script to fix Framework fingerprint on a NixOS install";
